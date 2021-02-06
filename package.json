@@ -1,0 +1,19 @@
+{
+  "name": "bunnings-site-app",
+  "version": "1.0.0",
+  "description": "Bunnings site functional tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe -c 1 chrome ./spec",
+    "test:chrome": "testcafe chrome ./spec",
+    "test:chrome:headless": "testcafe chrome:headless ./spec",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone 12 ./spec",
+    "test:safari": "testcafe safari ./spec",
+    "test:firefox": "testcafe firefox ./spec"
+  },
+  "author": "Christian Lim",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.10.1"
+  }
+}
